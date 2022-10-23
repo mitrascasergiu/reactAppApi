@@ -1,0 +1,15 @@
+C:\Personal\reactAppApi\App.Data\bin\Debug\net6.0\App.Data.deps.json
+C:\Personal\reactAppApi\App.Data\bin\Debug\net6.0\App.Data.dll
+C:\Personal\reactAppApi\App.Data\bin\Debug\net6.0\App.Data.pdb
+C:\Personal\reactAppApi\App.Data\obj\Debug\net6.0\App.Data.csproj.AssemblyReference.cache
+C:\Personal\reactAppApi\App.Data\obj\Debug\net6.0\App.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Personal\reactAppApi\App.Data\obj\Debug\net6.0\App.Data.AssemblyInfoInputs.cache
+C:\Personal\reactAppApi\App.Data\obj\Debug\net6.0\App.Data.AssemblyInfo.cs
+C:\Personal\reactAppApi\App.Data\obj\Debug\net6.0\App.Data.csproj.CoreCompileInputs.cache
+C:\Personal\reactAppApi\App.Data\obj\Debug\net6.0\App.Data.dll
+C:\Personal\reactAppApi\App.Data\obj\Debug\net6.0\refint\App.Data.dll
+C:\Personal\reactAppApi\App.Data\obj\Debug\net6.0\App.Data.pdb
+C:\Personal\reactAppApi\App.Data\obj\Debug\net6.0\ref\App.Data.dll
+C:\Personal\reactAppApi\App.Data\bin\Debug\net6.0\App.Models.dll
+C:\Personal\reactAppApi\App.Data\bin\Debug\net6.0\App.Models.pdb
+C:\Personal\reactAppApi\App.Data\obj\Debug\net6.0\App.Data.csproj.CopyComplete

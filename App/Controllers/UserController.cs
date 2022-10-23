@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using App.Models;
+using App.Services;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
 
 namespace App.Controllers
 {
@@ -12,36 +9,33 @@ namespace App.Controllers
     [Route("[controller]")]
     public class UserController : ControllerBase
     {
-        private readonly ILogger<UserController> _logger;
+        private readonly IUserService _userService;
 
-        public UserController(ILogger<UserController> logger)
+        public UserController(IUserService userService)
         {
-            _logger = logger;
+            _userService = userService;
         }
 
         [HttpPost]
         [Route("login")]
-        public LoginResponse Login([FromBody] LoginRequest request)
+        public async Task<LoginResponse> Login([FromBody] LoginRequest request)
         {
-            //mocks
-            if (request.Username.Equals("admin"))
-            {
-                return new LoginResponse()
-                {
-                    Username = request.Username,
-                    Role = "admin"
-                };
-            } else if (request.Username.Equals("user"))
-            {
-                return new LoginResponse()
-                {
-                    Username = request.Username,
-                    Role = "user"
-                };
-            } else
-            {
-                throw new Exception();
-            }
+            return await _userService.Login(request);
+        }
+
+        [HttpPost]
+        [Route("create")]
+        public async Task<ActionResult<int>> Create([FromBody] CreateUserRequest request)
+        {
+            return Ok(await _userService.Create(request));
+        }
+
+        [HttpPost]
+        [Route("delete")]
+        public async Task<ActionResult<int>> Delete([FromBody] DeleteUserRequest request)
+        {
+            await _userService.Delete(request);
+            return Ok();
         }
     }
 }

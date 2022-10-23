@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "tPY9rIvvOaRTBP5v2bwzMaYscBZTnjpXJ+3rbjPH6evCCMoAPh5qP0SwBQRL85xKcf4Vq+1uJr8/k5VQNeBiSw==",
+  "success": true,
+  "projectFilePath": "C:\\Personal\\reactAppApi\\App.Data\\App.Data.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\sergiu.mitrasca\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512"
+  ],
+  "logs": []
+}
